@@ -14,33 +14,24 @@ html {
 
 body {
     font-size: 2rem;
-    color: black;
+    color: #1F2022;
 }
 
 /*********************/
 /* overall styles */
 /*********************/
 
-
-/* 
-font-family: 'Pacifico', ;
-
-font-family: 'Catamaran', ; */
-
-
-.wrapperMain {
-    max-width: 1366px;
+.wrapper-main {
+    max-width: 1600px;
     width: 90%;
     margin: 0 auto;
 }
 
 .wrapper {
-    max-width: 1280px;
+    max-width: 1366px;
     width: 90%;
     margin: 0 auto;
 }
-
-
 
 .background {
     background-image: url(../assets/image-1.jpg);
@@ -104,19 +95,19 @@ a {
 /* Nav styles */
 /*********************/
 
-.navBar {
+.nav-bar {
     text-align: center;
     color: white;
     padding-top: 25px;
 }
 
-.navBar ul li {
+.nav-bar ul li {
     display: inline;
     text-decoration: none;
     padding: 20px;
 }
 
-.mobileBar {
+.mobile-bar {
     float: right;
     display: none;
     font-size: 50px;
@@ -141,13 +132,13 @@ header {
     float: left;
 }
 
-.titleMedia {
+.title-media {
     width: 10%;
     float: right;
     padding-top: 100px;
 }
 
-.titleMedia li {
+.title-media li {
     padding: 5px 0;
 }
 
@@ -158,18 +149,18 @@ header {
 
 
 
-.backgroundTest {
+.background-about {
     background-image: url(../assets/image-2.jpg);
     background-position: right center;
     height: 100%;
-    background-size: 95%;
+    background-size: 90%;
     background-repeat: no-repeat;
 }
 .about {
     width: 100%;
 }
 
-.aboutUs {
+.about-us {
     /* padding-top: 50px; */
     height: 500px;   
     width: 50%;
@@ -178,34 +169,33 @@ header {
     /* height: 100%; */
 }
 
-.aboutImage {
+.about-image {
     display: none;
 }
 
-.wrapperUs {
+.wrapper-us {
     width: 90%;
-    margin: auto;
-    padding-top: 50px;
+    padding-top: 70px;
 }
 
 /*********************/
 /* Mission styles */
 /*********************/
 
-.backgroundMission {
+.background-mission {
     background-image: url(../assets/image-7.jpg);
     background-position: left center;
     height: 100%;
-    background-size: 95%;
+    background-size: 90%;
     background-repeat: no-repeat;
 }
 
-.missionImage {
+.mission-image {
     display: none;
 }
 
-.missionContent {
-    padding-left: 50px;
+.mission-content {
+    padding-left: 65px;
     height: 500px;
     width: 50%;
     float: right;
@@ -213,10 +203,10 @@ header {
     background-color: white;
 }
 
-.wrapperMission {
+.wrapper-mission {
     width: 90%;
     margin: auto;
-    padding-top: 50px;
+    padding-top: 70px;
 }
 
 
@@ -233,12 +223,12 @@ header {
     align-items: center;
 }
 
-.meetImage {
+.meet-image {
     float: left;
     width: 30%;
 }
 
-.meetContent {
+.meet-content {
     float: left;
     margin-left: 20px;
     width: calc(70% - 20px);
@@ -274,12 +264,12 @@ header {
 /*********************/
 
 .gram {
-    padding: 50px 0 100px 0;
+    padding: 0 0 100px 0;
 }
 
 .gram h2 {
     text-align: center;
-    /* margin-bottom: 50px; */
+    padding: 50px 0;
 }
 
 .gram .gallery li {
@@ -304,64 +294,82 @@ header {
 footer {
     background-color: #1F2022;
     color: white;
-    padding: 50px 0;
 }
 
-.footerNavBar {
+.footer-nav-bar {
     text-align: center;
+    padding-top: 50px;
+    text-transform: uppercase;
 }
 
-.footerNavBar li {
+.footer-nav-bar li {
     display: inline-block;
     padding: 20px;
+}
 
+.footer-container {
+    padding-bottom: 50px;
 }
 
 .contact {
     float: left;
     width: 50%;
+    padding-top: 5px;
 }
 
 .contact h2 {
     color: #F2A11C;
 }
 
-.mailingList {
+.mailing-list {
     float: right;
     width: 50%;
 }
 
-.mailingList h2 {
+.mailing-list h2 {
+    margin-bottom: 0;
+}
+
+.mailing-list h2 {
     color: #F2A11C;
 }
 
-.mailingList input[type="text"] {
+.mailing-list input[type="text"] {
     border: 1px solid black;
     width: 70%;
     line-height: 50px;
     float: left;
-
+    padding-left: 50px;
+    border-right-color: white;
 }
 
-.mailingList input[type="submit"] {
+.mailing-list input[type="submit"] {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+    padding: 0 20px;
     border: 1px solid black;
     color: black;
     background-color: #F2A11C;
     line-height: 52px;
+    border-left-color: white;
 }
 
+
+.copyright {
+    background-color: black;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.copyright p {
+    color: #4A4A4A;
+    margin-bottom: 0;
+    padding-top: 10px;
+}
 
 /*********************/
 /* Media queries */
 /*********************/
-
-
-/* @media(max-width: 1690px) { ...} */
-
-
-/* @media(max-width: 1420px) {
-
-} */
 
 
 @media(max-width: 1280px) {
@@ -378,68 +386,64 @@ html {
     height: 40vh;
 }
 
-.aboutImage {
+.about-image {
     display: block;
 }
 
-.backgroundTest {
+.background-about {
     height: 0;
 }
 
-.aboutUs {
-    margin: 20px 0;
+.about-us {
+    margin: 20px 0 40px 0;
     width: 100%;
     float: left;
     height: 100%;
     text-align: center;
 }
 
-.wrapperUs {
+.wrapper-us {
     width: 100%;
     padding-top: 0;
 }
-.backgroundMission {
+.background-mission {
     height: 0;
 }
 
-.missionImage {
+.mission-image {
     display: block;
 }
 
-.missionContent {
+.mission-content {
     padding-left: 0;
-    margin: 20px 0;
+    margin: 20px 0 40px 0;
     width: 100%;
     float: right;
     height: 100%;
     text-align: center;
 }
 
-.wrapperMission {
+.wrapper-mission {
     width: 100%;
     padding-top: 0;
 }
 
-.meetImage {
+.meet-image {
     float: left;
     width: 100%;
 
 }
 
-.meetContent {
-float: left;
-margin-left: 0;
-width: 100%;
-text-align: center;
-}
+.meet-content {
+    float: left;
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+    }
 
 .social {
-height: 300px;
-padding-top: 81.25px;
-}
-
-.gram {
-    padding: 25px 0 50px 0;
+    height: 300px;
+    padding-top: 81.25px;
 }
 
 .gram .gallery li {
@@ -458,33 +462,53 @@ padding-top: 81.25px;
 /* Footer */
 
 footer {
-    padding: 25px 0;
-}
+    padding: 0;
+    }
+    
+    .footer-nav-bar {
+        padding-top: 20px;    
+    }
 
 .contact {
     float: none;
     width: 100%;
     text-align: center;
-}
+    }
 
 
-.mailingList {
+.mailing-list {
     float: none;
     width: 100%;
     text-align: center;
-}
+    }
 
 
-.mailingList input[type="text"] {
-    width: 100%;
+.mailing-list input[type="text"] {
+    width: 50%;
     line-height: 50px;
     float: none;
     text-align: center;
-}
+    }
 
-.mailingList input[type="submit"] {
-    width: 100%;
-}
+.mailing-list input[type="submit"] {
+    width: 50%;
+    }
+
+
+    .mailing-list input[type="text"] {
+        margin-bottom: 10px;
+        text-align: center;
+        padding-left: 0;
+        border-right-color: black;
+    }
+    
+    .mailing-list input[type="submit"] {
+        border-left-color: black;
+    }
+
+    .copyright {
+        padding-bottom: 5px;    
+    }
 
 }
 
@@ -500,27 +524,27 @@ footer {
     .background {
         height: 40vh;
     }
- }
+}
 
 @media(max-width: 800px) {
     html {
         font-size: 55%;
     }
-    .navBar ul {
+    .nav-bar ul {
         display: none;
     }
 
-    .mobileBar {
+    .mobile-bar {
         display: block;
     }
     
 
-    .titleMedia {
+    .title-media {
         display: none;
     }
 
     .bikerland {
-        margin-top: 150px;
+        margin-top: 200px;
     }
 
     .background {
@@ -528,15 +552,15 @@ footer {
     }
 
 
-    .aboutImage {
+    .about-image {
         display: block;
     }
 
-    .backgroundTest {
+    .background-about {
         height: 0;
     }
 
-    .aboutUs {
+    .about-us {
         margin: 20px 0;
         width: 100%;
         float: left;
@@ -544,18 +568,18 @@ footer {
         text-align: center;
     }
 
-    .wrapperUs {
+    .wrapper-us {
         width: 100%;
     }
-    .backgroundMission {
+    .background-mission {
         height: 0;
     }
     
-    .missionImage {
+    .mission-image {
         display: block;
     }
 
-    .missionContent {
+    .mission-content {
         padding-left: 0;
         margin: 20px 0;
         width: 100%;
@@ -564,17 +588,16 @@ footer {
         text-align: center;
     }
 
-    .wrapperMission {
+    .wrapper-mission {
         width: 100%;
     }
 
-    .meetImage {
+    .meet-image {
         float: left;
         width: 100%;
-
     }
 
-    .meetContent {
+    .meet-content {
     float: left;
     margin-left: 0;
     width: 100%;
@@ -587,7 +610,7 @@ footer {
     }
 
     .gram {
-        padding: 25px 0 50px 0;
+        padding: 0 0 50px 0;
     }
 
     .gram .gallery li {
@@ -606,7 +629,7 @@ footer {
     /* Footer */
 
     footer {
-        padding: 25px 0;
+        padding: 0;
     }
 
     .contact {
@@ -615,29 +638,39 @@ footer {
         text-align: center;
     }
 
-    .mailingList {
+    .mailing-list {
         float: none;
         width: 100%;
         text-align: center;
     }
 
-
-    .mailingList input[type="text"] {
+    .mailing-list input[type="text"] {
         width: 100%;
         line-height: 50px;
         float: none;
         text-align: center;
     }
 
-    .mailingList input[type="submit"] {
+    .mailing-list input[type="submit"] {
         width: 100%;
     }
 }
 
-@media(max-width: 680px) {
+@media(max-width: 715px) {
 
     html {
         font-size: 50%;
+    }
+
+    .social {
+        height: 440px;
+        padding-top: 30px;
+    }
+
+    .social ul li {
+        display: block;
+        list-style: none;
+        padding: 0 50px;
     }
 
 }
@@ -648,12 +681,35 @@ footer {
         font-size: 45%;
     }
 
+    .social {
+        height: 400px;
+        padding-top: 30px;
+    }
+
+    .social ul li {
+        display: block;
+        list-style: none;
+        padding: 0 50px;
+    }
+
 }
 
 @media(max-width: 550px) {
 
     html {
         font-size: 40%;
+    }
+
+
+    .social {
+        height: 350px;
+        padding-top: 25px;
+    }
+
+    .social ul li {
+        display: block;
+        list-style: none;
+        padding: 0 50px;
     }
 
 }
@@ -664,20 +720,20 @@ footer {
         font-size: 35%;
     }
 
-    .navBar ul {
+    .nav-bar ul {
         display: none;
     }
 
-    .mobileBar {
+    .mobile-bar {
         display: block;
     }
 
-    .titleMedia {
+    .title-media {
         display: none;
     }
 
     .bikerland {
-        margin-top: 150px;
+        margin-top: 200px;
     }
 
     .background {
@@ -685,15 +741,15 @@ footer {
     }
 
 
-    .aboutImage {
+    .about-image {
         display: block;
     }
 
-    .backgroundTest {
+    .background-about {
         height: 0;
     }
 
-    .aboutUs {
+    .about-us {
         margin: 20px 0;
         width: 100%;
         float: left;
@@ -701,18 +757,18 @@ footer {
         text-align: center;
     }
 
-    .wrapperUs {
+    .wrapper-us {
         width: 100%;
     }
-    .backgroundMission {
+    .background-mission {
         height: 0;
     }
     
-    .missionImage {
+    .mission-image {
         display: block;
     }
 
-    .missionContent {
+    .mission-content {
         padding-left: 0;
         margin: 20px 0;
         width: 100%;
@@ -721,16 +777,16 @@ footer {
         text-align: center;
     }
 
-    .wrapperMission {
+    .wrapper-mission {
         width: 100%;
     }
 
-    .meetImage {
+    .meet-image {
         float: left;
         width: 100%;
     }
 
-    .meetContent {
+    .meet-content {
     float: left;
     margin-left: 0;
     width: 100%;
@@ -738,8 +794,8 @@ footer {
     }
 
     .social {
-    height: 300px;
-    padding-top: 35px;
+    height: 320px;
+    padding-top: 25px;
     }
 
     .social ul li {
@@ -749,7 +805,7 @@ footer {
     }
 
     .gram {
-        padding: 25px 0 50px 0;
+        padding: 0 0 50px 0;
     }
 
     .gram .gallery li {
@@ -764,11 +820,10 @@ footer {
         margin-right: 0;
     }
 
-
     /* Footer */
 
     footer {
-        padding: 25px 0;
+        padding: 0;
     }
 
     .contact {
@@ -777,21 +832,21 @@ footer {
         text-align: center;
     }
 
-    .mailingList {
+    .mailing-list {
         float: none;
         width: 100%;
         text-align: center;
     }
 
 
-    .mailingList input[type="text"] {
+    .mailing-list input[type="text"] {
         width: 100%;
         line-height: 50px;
         float: none;
         text-align: center;
     }
 
-    .mailingList input[type="submit"] {
+    .mailing-list input[type="submit"] {
         width: 100%;
     }
 }
@@ -802,26 +857,29 @@ footer {
         font-size: 30%;
     }
 
+    .social {
+        height: 300px;
+        padding-top: 35px;
+    }
+
 }
 
 /* Additional landscape corrections */
-
-/* Landscape */
 
 @media(max-width: 812px) and (orientation: landscape) {
     .bikerland {
         margin-top: 25px;   
     }
 
-    .titleMedia {
+    .title-media {
         display: none;
     }
 
-    .navBar ul {
+    .nav-bar ul {
         display: none;
     }
 
-    .mobileBar {
+    .mobile-bar {
         display: block;
     }
 }
@@ -831,11 +889,11 @@ footer {
         margin-top: 30px;    
     }
 
-    .navBar ul {
+    .nav-bar ul {
         display: none;
     }
 
-    .mobileBar {
+    .mobile-bar {
         display: block;
     }
 
@@ -846,11 +904,11 @@ footer {
         margin-top: 40px;    
     }
 
-    .navBar ul {
+    .nav-bar ul {
         display: none;
     }
 
-    .mobileBar {
+    .mobile-bar {
         display: block;
     }
 
